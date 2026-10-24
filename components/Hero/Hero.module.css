@@ -105,6 +105,37 @@
   color: #fff;
 }
 
+.primaryButton,
+.secondaryButton {
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryButton:hover {
+  background-color: #e51d36;
+  border-color: #e51d36;
+  box-shadow: 0 6px 18px rgba(255, 36, 63, 0.3);
+  transform: translateY(-2px);
+}
+
+.secondaryButton:hover {
+  background-color: #fff;
+  color: #1769e0;
+  transform: translateY(-2px);
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+  outline: 3px solid #36c5ff;
+  outline-offset: 4px;
+}
+
+.primaryButton:active,
+.secondaryButton:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
 .benefits {
   width: 100%;
   margin-top: auto;
