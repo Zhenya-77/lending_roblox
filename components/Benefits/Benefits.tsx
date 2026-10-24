@@ -21,8 +21,8 @@ export default function Benefits() {
             <FaCode />
           </span>
           <div className={css.benefitText}>
-            <h4>Програмування на Luau</h4>
-            <p>Скрипти, події, логіка, ігрові механіки</p>
+            <h4>Навички програмування</h4>
+            <p>Luau, скрипти, ігрові механіки</p>
           </div>
         </li>
         <li>
@@ -34,7 +34,7 @@ export default function Benefits() {
           </span>
           <div className={css.benefitText}>
             <h4>3D-моделювання</h4>
-            <p>Ландшафти, персонажі, об`єкти</p>
+            <p>Створення ландшафтів, персонажів та об`єктів</p>
           </div>
         </li>
         <li>
@@ -45,8 +45,8 @@ export default function Benefits() {
             <FaGamepad />
           </span>
           <div className={css.benefitText}>
-            <h4>Ігровий дизайн</h4>
-            <p>Рівні, завдання, баланс, цікавість</p>
+            <h4>Розуміння ігрового дизайну</h4>
+            <p>Як створювати цікаві рівні, в які хочеться грати</p>
           </div>
         </li>
         <li>
@@ -57,8 +57,8 @@ export default function Benefits() {
             <FaUsers />
           </span>
           <div className={css.benefitText}>
-            <h4>Власні проєкти</h4>
-            <p>Повноцінна гра і презентація</p>
+            <h4>Реалізація власних ідей</h4>
+            <p>Від задуму до готової гри</p>
           </div>
         </li>
         <li>
@@ -69,8 +69,8 @@ export default function Benefits() {
             <FaChartLine />
           </span>
           <div className={css.benefitText}>
-            <h4>Розвиток навичок</h4>
-            <p>Математика, фізика, креативність, логіка</p>
+            <h4>Важливі навички майбутнього</h4>
+            <p>Логіка, математика, технічна творчість, робота над проектом</p>
           </div>
         </li>
       </ul>
