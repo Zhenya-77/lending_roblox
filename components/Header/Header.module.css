@@ -9,8 +9,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  flex: 0 0 300px;
+  flex: 0 1 300px;
   max-width: 300px;
+  min-width: 0;
   color: #fff;
   text-decoration: none;
   transition: opacity 0.2s ease;
@@ -40,7 +41,9 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px 28px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -71,6 +74,7 @@
   font-weight: 700;
   line-height: 1.4;
   text-decoration: none;
+  text-align: center;
   transition: background-color 0.2s ease, border-color 0.2s ease,
     transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -92,4 +96,56 @@
 .headerButton:active {
   transform: translateY(0);
   box-shadow: none;
+}
+
+/* Планшети */
+@media (max-width: 900px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .logo {
+    flex: 1 1 200px;
+  }
+
+  .headerButton {
+    flex-shrink: 1;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 12px 24px;
+  }
+}
+
+/* Мобільні телефони */
+@media (max-width: 600px) {
+  .header {
+    gap: 16px;
+  }
+
+  .logo {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .logoText {
+    max-width: 250px;
+  }
+
+  .headerButton {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .nav {
+    gap: 12px 18px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
 }
